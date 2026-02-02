@@ -63,5 +63,32 @@ git tag <tag-name> <commit-id>
 ```
 ![tag the commit](screenshots/ss9.png)
 
-- Create two new branch from the develop
+- Create two new branch from the develop, and in feat3 branch, commit the modified readme file.
 ![Create two branch](screenshots/ss10.png)
+
+- Cherry-pick the last commit from feat3 to feat4.
+```
+git cherry-pick <commit-ids>
+```
+![cherry-pick opration](screenshots/ss11.png)
+
+- Change the last commit message in the 4th branch.
+```
+git commit --amend -m "<new message>"
+```
+![change commit message](screenshots/ss12.png)
+
+- Do multiple commit and delete last commit by reset.
+```
+git reset --hard HEAD~1
+```
+- Before reset :
+![Before reset](screenshots/ss13.png)
+- After reset :
+![After reset](screenshots/ss14.png)
+
+- At last, git log
+```
+git log --oneline --graph --all
+```
+![Final git graph](screenshots/ss15.png)
